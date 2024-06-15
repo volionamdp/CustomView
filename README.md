@@ -13,7 +13,7 @@ Lớp `Paint` trong Android cung cấp một loạt các phương thức để t
 3. **setAlpha(int alpha)**
    - Đặt độ mờ của `Paint`.
    - `alpha`: Giá trị từ 0 (hoàn toàn trong suốt) đến 255 (hoàn toàn không trong suốt).
-   - lưu ý: setAlpha phải gọi sau `setColor` mới có tác dụng
+   - lưu ý: `setAlpha` phải gọi sau `setColor` mới có tác dụng
 
 4. **setAntiAlias(boolean isAntiAlias)**
    - Đặt chế độ làm mịn cho `Paint`.
