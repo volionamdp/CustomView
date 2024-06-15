@@ -39,7 +39,7 @@ Lớp `Paint` trong Android cung cấp một loạt các phương thức để t
 9. **setShader(Shader shader)**
    - Đặt `Shader` cho `Paint` để điều chỉnh màu sắc hoặc mẫu nền của hình vẽ.
    - `shader`: Đối tượng `Shader` để điều chỉnh màu sắc hoặc mẫu nền .
-   - vd: hình hoặc nét vẽ muốn có gradient thì dùng LinearGradient,RadialGradient,RadialGradient. Nếu hình hoặc nét vẽ khi vẽ ra một hình khác thì dùng BitmapShader (các hiệu ứng Kính lúp phóng to nét vẽ có thể dùng cái này) 
+   - vd: hình hoặc nét vẽ muốn có `gradient` thì dùng `LinearGradient`,`RadialGradient`,`RadialGradient`. Nếu hình hoặc nét vẽ khi vẽ ra một hình khác thì dùng `BitmapShader` (các hiệu ứng Kính lúp phóng to nét vẽ có thể dùng cái này) 
 
 10. **setXfermode(Xfermode xfermode)**
     - Đặt `Xfermode` cho `Paint` để điều chỉnh chế độ vẽ và blend các hình vẽ trên `Canvas`.
