@@ -13,7 +13,7 @@ Lớp `Paint` trong Android cung cấp một loạt các phương thức để t
 3. **setAlpha(int alpha)**
    - Đặt độ mờ của `Paint`.
    - `alpha`: Giá trị từ 0 (hoàn toàn trong suốt) đến 255 (hoàn toàn không trong suốt).
-   - lưu ý: setAlpha phải gọi sau setColor mới có tác dụng
+   - lưu ý: setAlpha phải gọi sau `setColor` mới có tác dụng
 
 4. **setAntiAlias(boolean isAntiAlias)**
    - Đặt chế độ làm mịn cho `Paint`.
@@ -22,7 +22,7 @@ Lớp `Paint` trong Android cung cấp một loạt các phương thức để t
 5. **setStyle(Paint.Style style)**
    - Đặt kiểu vẽ cho `Paint`.
    - `style`: Kiểu vẽ có thể là `Paint.Style.FILL` (đổ màu), `Paint.Style.STROKE` (nét đường) hoặc `Paint.Style.FILL_AND_STROKE` (đổ màu và vẽ nét đường).
-   - lưu ý: FILL_AND_STROKE vẫn cùng màu sắc chứ không phải riêng biệt
+   - lưu ý: `FILL_AND_STROKE` vẫn cùng màu sắc chứ không phải riêng biệt
 
 6. **setStrokeWidth(float width)**
    - Đặt độ dày của nét vẽ khi sử dụng kiểu `Paint.Style.STROKE`.
