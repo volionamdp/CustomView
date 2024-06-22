@@ -54,7 +54,7 @@
    - **Mô tả:** Đóng đường dẫn hiện tại.
 
 9. **cubicTo(float x1, float y1, float x2, float y2, float x3, float y3): Path**
-   - **Mô tả:** Thêm một đường cong bậc ba vào đường dẫn ( [vào trang này xem thử dễ tưởng tượng hơn] (https://math.hws.edu/eck/cs424/notes2013/canvas/bezier.html)) .
+   - **Mô tả:** Thêm một đường cong bậc ba vào đường dẫn ( [vào trang này xem thử dễ tưởng tượng hơn](https://math.hws.edu/eck/cs424/notes2013/canvas/bezier.html) ) .
    - **Tham số:**
      - `x1`: Tọa độ X của điểm điều khiển đầu tiên.
      - `y1`: Tọa độ Y của điểm điều khiển đầu tiên.
@@ -76,7 +76,7 @@
       - `y`: Tọa độ Y mới.
 
 12. **quadTo(float x1, float y1, float x2, float y2): Path**
-    - **Mô tả:** Thêm một đường cong bậc hai vào đường dẫn ( [vào trang này xem thử dễ tưởng tượng hơn] (https://math.hws.edu/eck/cs424/notes2013/canvas/bezier.html)).
+    - **Mô tả:** Thêm một đường cong bậc hai vào đường dẫn ( [vào trang này xem thử dễ tưởng tượng hơn](https://math.hws.edu/eck/cs424/notes2013/canvas/bezier.html) ).
     - **Tham số:**
       - `x1`: Tọa độ X của điểm điều khiển.
       - `y1`: Tọa độ Y của điểm điều khiển.
