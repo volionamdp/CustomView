@@ -1,3 +1,23 @@
+# Chú ý
+Có thể lấy toạ độ vị tri của một điểm nằm trên Path bằng cách sử dụng PathMeasure ví dụ:
+
+```kotlin
+val path = Path()
+// Vẽ đường dẫn
+path.moveTo(100f, 100f)
+path.lineTo(200f, 200f)
+path.lineTo(300f, 100f)
+
+val pathMeasure = PathMeasure(path, false) // false để tính toán chiều dài chính xác
+val length = pathMeasure.length // Chiều dài đường dẫn
+
+val distance = length * 0.5f // Tính toán vị trí dọc theo đường dẫn
+val pos = FloatArray(2)
+val success = pathMeasure.getPosTan(distance, pos, null) // Lấy vị trí ở khoảng cách `distance` trả về giá trị trong `pos`
+
+```
+
+
 # Các phương thức của lớp Path trong Android
 
 1. **addArc(oval: RectF ,startAngle: Float, sweepAngle: Float): Path**
@@ -6,7 +26,7 @@
      - `oval`: Hình chữ nhật xác định hình elip.
      - `startAngle`: Góc bắt đầu (độ).
      - `sweepAngle`: Góc quét (độ).
-
+   
 2. **addCircle( x: Float, y: Float, radius: Float, dir: Path.Direction): Path**
    - **Mô tả:** Thêm một đường tròn vào đường dẫn.
    - **Tham số:**
