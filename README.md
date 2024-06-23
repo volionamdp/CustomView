@@ -4,6 +4,8 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
   - Trục `X` dương hướng sang phải
   - Trục `Y` dương hướng xuống dưới
   - Đơn vị  1 `pixel` (Điểm ảnh trên màn hình)
+
+
 ![Hệ tọa độ](https://github.com/volionamdp/CustomView/blob/Matrix/image/HeToaDo.png)
 
 # Các phương thức hay sử dụng
