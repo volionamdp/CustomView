@@ -8,7 +8,8 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
 
 ![Hệ tọa độ](https://github.com/volionamdp/CustomView/blob/Matrix/image/HeToaDo.png)
 
-# Các phương thức hay sử dụng
+# Matrix
+## Các phương thức hay sử dụng
 ### Các phương thức khởi tạo và lấy matrix
 
 1. **`fun reset()`**
@@ -151,7 +152,7 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
     - **Tham số**:
       - `dx: Float`: Khoảng dịch chuyển theo trục x.
       - `dy: Float`: Khoảng dịch chuyển theo trục y.
-# Phương thức ít sử dụng hơn
+## Phương thức ít sử dụng hơn
 25. **`fun preConcat(matrix: Matrix): Boolean`**
     - **Mô tả**: Nhân ma trận hiện tại với `matrix` (trước ma trận hiện tại).
     - **Tham số**:
