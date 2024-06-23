@@ -3,7 +3,7 @@
 Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên trái 
   - Trục `X` dương hướng sang phải
   - Trục `Y` dương hướng xuống dưới
-  - Đơn vị  1 `pixel` (Điểm ảnh trên màn hình)
+  - Đơn vị  1 `pixel` (1 diểm ảnh trên màn hình) nên với `mỗi một màn hình sẽ có chiều rộng và cao của view sẽ khác nhau` (muốn sử lí giống nhau với mọi màn hình có để dùng giá trị dp,hoặc phần trăm so với width,height)
 
 
 ![Hệ tọa độ](https://github.com/volionamdp/CustomView/blob/Matrix/image/HeToaDo.png)
