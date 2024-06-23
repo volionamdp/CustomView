@@ -1,4 +1,5 @@
 
+
 # Hệ tọa độ trong View
 Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên trái 
   - Trục `X` dương hướng sang phải
@@ -8,6 +9,25 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
 
 ![Hệ tọa độ](https://github.com/volionamdp/CustomView/blob/Matrix/image/HeToaDo.png)
 
+# Chú ý
+Khi áp dụng Matrix nên gọi `canvas.save()` và khi sử dụng xong gọi  ` canvas.restore()` để trả về trạng thái ban đầu
+
+```kotlin
+override fun onDraw(canvas: Canvas) {  
+    canvas.save()  
+    canvas.setMatrix(matrix1)  
+    canvas.drawRect(rectF, paint)  
+    canvas.restore()  
+  
+    canvas.save()  
+    canvas.setMatrix(matrix2)  
+    canvas.drawRect(rectF, paint)  
+    canvas.restore()  
+  
+    canvas.drawRect(rectF, paint)  
+  
+}
+```
 # Matrix
 ## Các phương thức hay sử dụng
 #### Các phương thức khởi tạo và lấy matrix
