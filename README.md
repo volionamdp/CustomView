@@ -1,7 +1,7 @@
 
 # Chú ý:
 Muốn sử dụng xfermode trong view phải gọi bất hoặc tắt tặng tốc phần cứng:
-- gọi `setLayerType(LAYER_TYPE_HARDWARE,null)` **(nên dùng)** hoặc `setLayerType(LAYER_TYPE_SOFTWARE,null)` ở inti của View
+- gọi `setLayerType(LAYER_TYPE_HARDWARE,null)` **(nên dùng)** hoặc `setLayerType(LAYER_TYPE_SOFTWARE,null)` ở init của View
 
 # Các loại Xfermode trong Android 
 
