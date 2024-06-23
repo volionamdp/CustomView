@@ -10,7 +10,7 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
 
 # Matrix
 ## Các phương thức hay sử dụng
-### Các phương thức khởi tạo và lấy matrix
+#### Các phương thức khởi tạo và lấy matrix
 
 1. **`fun reset()`**
    - **Mô tả**: Đặt lại ma trận về ma trận đơn vị.
@@ -35,7 +35,7 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
    - **Mô tả**: Kiểm tra xem đối tượng `Matrix` hiện tại có phải là ma trận đơn vị hay không.
    - **Tham số**: Không có.
    
-### Các phương thức biến đổi (áp dụng) Matrix với tọa độ (vd: tính điểm x,y sau khi áp dụng Matrix tọa độ mới ở vị trí nào thì có thể dùng mapPoints)
+#### Các phương thức biến đổi (áp dụng) Matrix với tọa độ (vd: tính điểm x,y sau khi áp dụng Matrix tọa độ mới ở vị trí nào thì có thể dùng mapPoints)
 
 6. **`fun mapPoints(dst: FloatArray, src: FloatArray)`**
     - **Mô tả**: Biến đổi các điểm trong mảng `src` và lưu kết quả vào mảng `dst`.
@@ -66,7 +66,7 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
     - **Tham số**:
       - `dst: RectF`: Hình chữ nhật để lưu kết quả biến đổi.
       - `src: RectF`: Hình chữ nhật nguồn.
-###    Các phương thức thay đổi matrix hay dùng
+####    Các phương thức thay đổi matrix hay dùng
 11. **`fun postConcat(matrix: Matrix): Boolean`**
     - **Mô tả**: Nhân ma trận hiện tại với `matrix` (sau ma trận hiện tại).
     - **Tham số**:
