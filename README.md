@@ -1,5 +1,5 @@
 # Chú ý
-Có thể lấy toạ độ vị tri của một điểm nằm trên Path bằng cách sử dụng PathMeasure ví dụ:
+Có thể lấy toạ độ vị tri của một điểm nằm trên `Path` bằng cách sử dụng `PathMeasure` ví dụ:
 
 ```kotlin
 val path = Path()
