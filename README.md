@@ -10,7 +10,7 @@ Trong View android có hệ tọa độ gốc 0.0 ở vị trí trên cùng bên
 ![Hệ tọa độ](https://github.com/volionamdp/CustomView/blob/Matrix/image/HeToaDo.png)
 
 # Chú ý
-Khi áp dụng Matrix nên gọi `canvas.save()` và khi sử dụng xong gọi  ` canvas.restore()` để trả về trạng thái ban đầu
+- Khi áp dụng Matrix nên gọi `canvas.save()` và khi sử dụng xong gọi  ` canvas.restore()` để trả về trạng thái ban đầu
 
 ```kotlin
 override fun onDraw(canvas: Canvas) {  
@@ -28,6 +28,7 @@ override fun onDraw(canvas: Canvas) {
   
 }
 ```
+- Hàm  `rotate(degrees: Float, px: Float, py: Float)`.... có tham số truyền vào tâm `px`,`py` sẽ tương đương `translate(-px,-py)` -> `rotate(degrees)` -> `translate(dx,dy)` (thực tế các hàm rotate,scale... luôn xoay, co dãn với tâm là gốc tọa độ) 
 # Matrix
 ## Các phương thức hay sử dụng
 #### Các phương thức khởi tạo và lấy matrix
