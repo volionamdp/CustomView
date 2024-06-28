@@ -45,6 +45,7 @@ class XfermodeView @JvmOverloads constructor(
        (PorterDuff.Mode.DST_IN),
        (PorterDuff.Mode.DST_OUT),
        (PorterDuff.Mode.DST_OVER),
+       (PorterDuff.Mode.DST_ATOP),
 
        (PorterDuff.Mode.XOR),
        (PorterDuff.Mode.DARKEN),
