@@ -2,6 +2,9 @@
 # Chú ý:
 Muốn sử dụng xfermode trong view phải gọi bất hoặc tắt tăng tốc phần cứng:
 - gọi `setLayerType(LAYER_TYPE_HARDWARE,null)` **(nên dùng)** hoặc `setLayerType(LAYER_TYPE_SOFTWARE,null)` ở init của View
+- `SRC`: là phần được vẽ áp dụng `paint` có `xfermode`
+- `DST`: là tất cả nhưng gì được vẽ trong layer trước phần `SRC`
+- Nếu muốn áp dụng nhiều lớp xfermode phải gọi canvas.saveLayer để tác lớp
 
 # Các loại Xfermode trong Android 
 
