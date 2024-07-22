@@ -150,16 +150,6 @@ class WatermelonLayout {
         )
     }
 
-    private fun normalizationAngle(angle: Float): Float {
-        val newAngle = angle % 361
-        return if (newAngle < 0) {
-            newAngle + 360
-        } else if (newAngle > 360) {
-            newAngle - 360
-        } else {
-            newAngle
-        }
-    }
 
     private fun calculateAngle(cx: Float, cy: Float, x: Float, y: Float): Float {
         if (x == cx) {
