@@ -25,8 +25,6 @@ class WatermelonLayout {
     private var matrix = Matrix()
     private var viewWidth = 1
     private var viewHeight = 1
-    private var currentStep = 0
-    private var currentAngle = 180f
     private val listTest: MutableList<Test> = mutableListOf()
     private var paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = Color.RED
@@ -39,7 +37,6 @@ class WatermelonLayout {
 
     fun setData(watermelonModel: WatermelonModel) {
         data = watermelonModel
-        currentStep = 0
         listTest.clear()
         data.steps.forEach {
             val position = data.listPosition[it]
@@ -113,10 +110,11 @@ class WatermelonLayout {
             val sweepAngle = (newLength / (Math.PI * 2f * currentPosition.radius) * 360).toFloat()
             val currentTest = listTest[currentStep]
             if (currentStep % 2 == 0) {
-                if (angle+360-(currentTest.startAngle + sweepAngle) <360 && sweepAngle <= 360) {
+                if (angle < currentTest.startAngle) angle += 360
+                if ((currentTest.startAngle + sweepAngle) < angle && sweepAngle <= 360) {
                     currentTest.sweepAngle = sweepAngle
                 } else {
-                    currentTest.sweepAngle = abs(360 + (angle - currentTest.startAngle)) % 361
+                    currentTest.sweepAngle = angle - currentTest.startAngle
                     val length =
                         currentLength + abs((currentTest.sweepAngle / 360) * 2 * Math.PI * currentPosition.radius)
                     if (updateLength - length > 1) {
@@ -124,11 +122,15 @@ class WatermelonLayout {
                     }
                 }
             } else {
-                if (angle - (currentAngle - sweepAngle) < 0 && sweepAngle <= 360) {
+                if (angle > currentTest.startAngle){
+                    angle -= 360
+                    Log.d("sssetc", "update: $angle  ${currentTest.startAngle}")
+                }
+                if ((currentTest.startAngle - sweepAngle) > angle && sweepAngle <= 360) {
                     currentTest.sweepAngle = -sweepAngle
                 } else {
 
-                    currentTest.sweepAngle = -abs(angle - 360 - currentTest.startAngle) % 361
+                    currentTest.sweepAngle = angle - currentTest.startAngle
                     val length =
                         currentLength + abs((currentTest.sweepAngle / 360) * 2 * Math.PI * currentPosition.radius)
                     if (updateLength - length > 1) {
@@ -197,6 +199,6 @@ class WatermelonLayout {
             )
         )
 //        update(3600f, 1000f)
-//        update(2100f, 1000f)
+//        update(1600f, 1000f)
     }
 }
