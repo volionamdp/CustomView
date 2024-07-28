@@ -15,5 +15,5 @@
 3. **onTouchEvent**
    - **Mô tả:** Sử lí sự kiện chạm trên  `View`.
    
-#### Về cơ bản cách sử dụng `onInterceptTouchEvent` và `dispatchTouchEvent` nếu `ViewGroup` muốn sử lí sự kiện và không muốn phân phối cho `View` con thì trong `onInterceptTouchEvent` trả về `true`. Nếu `View` không muốn sử lí sự kiện chạm và nhường cho  `View` nằm bên dưới nó hoặc `ViewGroup` cha sử lí thì trong `dispatchTouchEvent`  trả về  `false`
+#### Về cơ bản cách sử dụng `onInterceptTouchEvent` và `dispatchTouchEvent`. Nếu `ViewGroup` muốn sử lí sự kiện và không muốn phân phối cho `View` con thì trong `onInterceptTouchEvent` trả về `true`. Nếu `View` không muốn sử lí sự kiện chạm và nhường cho  `View` nằm bên dưới nó hoặc `ViewGroup` cha sử lí thì trong `dispatchTouchEvent`  trả về  `false`
 
