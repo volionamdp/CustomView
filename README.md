@@ -39,4 +39,5 @@ Các hằng số hành động trong `MotionEvent` cho biết loại hành độ
 	- `getPointerCount()`: Trả về số lượng điểm chạm hiện tại.
 	- `getPointerId(int pointerIndex)`: Trả về ID của điểm chạm tại vị trí chỉ định.
 	- `getEventTime()`: Trả về thời gian xảy ra sự kiện.
+	- `getDownTime()`: Trả về thời gian bắt đầu `MotionEvent.ACTION_DOWN`.
 
