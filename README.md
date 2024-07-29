@@ -5,7 +5,7 @@ Muốn sử dụng xfermode trong view phải gọi bất hoặc tắt tăng t�
 - `SRC`: là phần được vẽ áp dụng `paint` có `xfermode`
 - `DST`: là tất cả nhưng gì được vẽ trong layer trước phần `SRC`
 - Nếu muốn áp dụng nhiều lớp xfermode phải gọi canvas.saveLayer để tác lớp
-
+# Ví dụ bên dưới $${\color{blue}SRC là ảnh hình vuông}$$	$${\color{red}DST là hình tròn màu đỏ}$$	
 # Các loại Xfermode trong Android 
 
  1. **SRC:**
