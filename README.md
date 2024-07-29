@@ -6,8 +6,8 @@ Muốn sử dụng xfermode trong view phải gọi bất hoặc tắt tăng t�
 - `DST`: là tất cả nhưng gì được vẽ trong layer trước phần `SRC`
 - Nếu muốn áp dụng nhiều lớp xfermode phải gọi canvas.saveLayer để tác lớp
 # Ví dụ bên dưới 
-	$${\color{blue}SRC_là_ảnh_hình_vuông}$$	
-	$${\color{red}DST_là_hình_tròn_màu_đỏ}$$	
+	-$${\color{blue}SRC_là_ảnh_hình_vuông}$$	
+	-$${\color{red}DST_là_hình_tròn_màu_đỏ}$$	
 # Các loại Xfermode trong Android 
 
  1. **SRC:**
